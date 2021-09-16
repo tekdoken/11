@@ -6,16 +6,16 @@
 </head>
 <body>
 <script>
+    let d=0
     let a = 0
     let b = 1
-    for (let i = 1; i <= 5 ; i++) {
+    for (let i = 1; i <= 20 ; i++) {
         let c = a + b;
         a = b;
+        d += b;
         b = c;
-        if (b%5==0){
-            document.write('số cần tìm là: '+b + ", ");
-        }
-    }
+    }   document.write('tổng của dãy 20 số fibonacci là: '+d + ", ");
+
 </script>
 </body>
 </html>
